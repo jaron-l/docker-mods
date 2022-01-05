@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+# clone pia manual connection script
+git clone --depth 1 --branch remove_connect --single_branch https://github.com/jaron-l/manual-connections.git /root/manual-connections
+
+# create config file
+cd /root/manual-connections
+./get_region.sh
+
