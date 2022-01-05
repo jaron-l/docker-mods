@@ -3,6 +3,7 @@
 set -e
 
 # clone pia manual connection script
+rm -rf /root/manual-connections
 git clone --depth 1 --branch remove_connect --single-branch https://github.com/jaron-l/manual-connections.git /root/manual-connections
 
 # create config file
